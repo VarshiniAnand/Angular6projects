@@ -1,148 +1,9 @@
-<!-- box and inside that names -->
 
-<!-- <html>
-<head>
-  <style>
-.row{
-  width: 390px;
-}
-.row div{
-  float:left;
-  width: 50px;
-  padding: 25px;
-  border: 5px solid black;
-  margin: 10px;
-}
-
- </style>
- </head>
- <body>
-
-  <div class="row">
-    <div>James</div>
-    <div>Richard</div>
-    <div>Kevin</div>
-</div>
-<div class="row">
-    <div>James</div>
-    <div>Richard</div>
-    <div>Kevin</div>
-</div>
-<div class="row">
-    <div>James</div>
-    <div>Richard</div>
-    <div>Kevin</div>
-</div>
-
- </body>
- </html> -->
-
-
-
-
-
-
-
-<!-- <div class="flex"> -->
-<!-- <div>James</div>
-  <div>Richard</div>
-  <div>Kevin</div>
-  <div>James</div>
-  <div>Richard</div>
-  <div>Kevin</div>
-  <div>James</div>
-  <div>Richard</div>
-  <div>Kevin</div> -->
-<!-- <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div> -->
-<!-- </div> -->
-
-
-
-
-<!-- <div style="height: 0; width:20%;padding-bottom:20%;background-color:red">
-  <div>
-  <div style="height: 0; width:20%;padding-bottom:20%;background-color:red">
-  <div>
-  <div style="height: 0; width:20%;padding-bottom:20%;background-color:red">
-  <div> -->
-
-
-
-<!-- <div class="col-md-3">
-  <div class="square" style="background-color: #DACBAD;">
-    <div class="content"></div>
-  </div>
-  <div class="square" style="background-color: #A78F6A;">
-    <div class="content"></div>
-  </div>
-  <div class="square" style="background-color: #A78F6A;">
-    <div class="content"></div>
-  </div>
-  <div class="square" style="background-color: #ECECEB;">
-    <div class="content"></div>
-  </div>
-  <div class="square" style="background-color: #DACBAD;">
-    <div class="content"></div>
-  </div>
-  <div class="square" style="background-color: #A78F6A;">
-    <div class="content"></div>
-  </div>
-  <div class="square" style="background-color: #ECECEB;">
-    <div class="content"></div>
-  </div>
-  <div class="square" style="background-color: #ECECEB;">
-    <div class="content"></div>
-  </div>
-  <div class="square" style="background-color: #DACBAD;">
-    <div class="content"></div>
-  </div>
-  <div class="clearfix"></div>
-  <a class="tooltips" id="BDot" href="#" style="position:absolute"><img src=><span>Content1</span></a>
-  <a class="tooltips" id="GDot" href="#" style="position:absolute"><img src=><span>Contenn2</span></a>
-</div> -->
 <script>
   $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
   });
   </script>
-
-<!-- <div class="flex">
-  <div class="square" style="background-color: #DACBAD;">
-  </div>
-  <div class="square" style="background-color: #A78F6A;">
-    <div></div>
-  </div>
-  <div class="square" style="background-color: #A78F6A;">
-    <div></div>
-  </div>
-  <div class="square" style="background-color: #ECECEB;">
-    <div></div>
-  </div>
-  <div class="square" style="background-color: #DACBAD;">
-    <div></div>
-  </div>
-  <div class="square" style="background-color: #A78F6A;">
-    <div></div>
-  </div>
-  <div class="square" style="background-color: #ECECEB;">
-    <div></div>
-  </div>
-  <div class="square" style="background-color: #ECECEB;">
-    <div></div>
-  </div>
-  <div class="square" style="background-color: #DACBAD;">
-    <div></div>
-  </div>
-</div> -->
-
 
 <div class="squareGraph">
   <div class="wrapper">
@@ -412,39 +273,276 @@
       </div>
     </div>
   </div>
-</div>
+</div> 
 
 
-
-
-<!-- <div class="row">
-  <div class="col">
-    <div class="card"></div>
+<div class="squareGraph">
+  <div class="wrapper">
+    <div class="smallFlex">
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='HL(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='HL(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='HL(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='HL(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='HL(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='HL(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='HL(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='HL(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='HL(2,2'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+    </div>
+    <div class="smallFlex">
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='HM(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='HM(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='HM(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='HM(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='HM(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='HM(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='HM(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='HM(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='HM(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+    </div>
+    <div class="smallFlex">
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='HH(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='HH(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='HH(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='HH(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='HH(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='HH(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='HH(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='HH(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='HH(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+    </div>
   </div>
-  <div class="col">
-    <div class="card"></div>
+  <div class="wrapper">
+    <div class="smallFlex">
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='ML(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='ML(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='ML(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='ML(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='ML(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='ML(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='ML(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='ML(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='ML(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+    </div>
+    <div class="smallFlex">
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='MM(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='MM(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='MM(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='MM(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='MM(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='MM(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='MM(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='MM(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='MM(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+    </div>
+    <div class="smallFlex">
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='MH(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='MH(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='MH(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='MH(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='MH(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='MH(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='MH(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='MH(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #A78F6A;">
+        <span *ngIf="pos==='MH(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+    </div>
   </div>
-  <div class="col">
-    <div class="card"></div>
+  <div class="wrapper">
+    <div class="smallFlex">
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='LL(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='LL(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='LL(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='LL(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='LL(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='LL(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='LL(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='LL(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='LL(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+    </div>
+    <div class="smallFlex">
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='LM(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='LM(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='LM(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='LM(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='LM(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='LM(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='LM(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='LM(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #ECECEB;">
+        <span *ngIf="pos==='LM(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+    </div>
+    <div class="smallFlex">
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='LH(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='LH(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='LH(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='LH(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='LH(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='LH(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='LH(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='LH(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+      <div class="smallSquare" style="background-color: #DACBAD;">
+        <span *ngIf="pos==='LH(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      </div>
+    </div>
   </div>
 </div>
-<div class="row">
-...
-</div>
-<div class="row">
-...
-</div>
-<div class="row">
-  ...
-</div> -->
-
-
-<!-- <mat-grid-list cols="2" rowHeight="3:1">
-  <mat-grid-tile>1</mat-grid-tile>
-  <mat-grid-tile>2</mat-grid-tile>
-  <mat-grid-tile>3</mat-grid-tile>
-  <mat-grid-tile>4</mat-grid-tile>
-</mat-grid-list> -->
-
-
 
