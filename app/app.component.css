@@ -1,28 +1,10 @@
 
 
 
- .square {
-    width: 10vw;
-    height: 10vw;
-    position: relative;
-  }
- 
-  .flex {
-    display: flex;
-    flex-wrap: wrap;
-    width: 37.3%
-  }
- 
-  .flex>div {
-    flex: 1 1 auto;
-    box-sizing: border-box;
-    margin: 0.5%;
-  }
- 
-  .smallSquare {
+ .smallSquare {
    width: 0.5vw;
    height: 0.5vw;
-   cursor: pointer;
+   
  }
  
  .smallFlex {
@@ -36,13 +18,14 @@
  .smallFlex>div {
    flex: 1 1 auto;
    box-sizing: border-box;
+   margin: -3.95%;
  }
  
  .innerSquare {
    position: relative;
    width: 3vw;
    height: 3vw;
-   cursor: pointer;
+   
  }
  
  .innerFlex {
@@ -55,12 +38,7 @@
  .innerFlex>div {
    flex: 1 1 auto;
    box-sizing: border-box;
-   /* margin: 1%; */
- }
- 
- 
- mat-grid-tile {
-   background: lightblue;
+   margin: -1.95%;
  }
  
  #circle {
@@ -70,11 +48,7 @@
    border-radius: 85%;
    background: black;
    position: absolute;
- }
- 
- 
- .wrapper {
-   display: flex;
+   cursor: pointer;
  }
  
  #dot {
@@ -84,8 +58,9 @@
    margin: 9.05%;
    background: black;
    position: absolute;
+   cursor: pointer;
  }
 
- .squareGraph div {
-     border: none !important;
- }
+ .wrapper {
+    display: flex;
+  }
