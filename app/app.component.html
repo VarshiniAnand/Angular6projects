@@ -1,548 +1,548 @@
-
+ 
 <script>
-  $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-  });
-  </script>
-
-<div class="squareGraph">
-  <div class="wrapper">
-    <div class="innerFlex">
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='HL(0,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='HL(0,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='HL(0,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='HL(1,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='HL(1,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='HL(1,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='HL(2,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='HL(2,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='HL(2,2'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-    </div>
-    <div class="innerFlex">
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='HM(0,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='HM(0,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='HM(0,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='HM(1,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='HM(1,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='HM(1,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='HM(2,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='HM(2,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='HM(2,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-    </div>
-    <div class="innerFlex">
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='HH(0,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='HH(0,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='HH(0,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='HH(1,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='HH(1,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='HH(1,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='HH(2,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='HH(2,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='HH(2,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-    </div>
-  </div>
-  <div class="wrapper">
-    <div class="innerFlex">
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='ML(0,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='ML(0,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='ML(0,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='ML(1,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='ML(1,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='ML(1,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='ML(2,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='ML(2,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='ML(2,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-    </div>
-    <div class="innerFlex">
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='MM(0,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='MM(0,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='MM(0,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='MM(1,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='MM(1,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='MM(1,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='MM(2,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='MM(2,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='MM(2,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-    </div>
-    <div class="innerFlex">
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='MH(0,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='MH(0,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='MH(0,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='MH(1,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='MH(1,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='MH(1,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='MH(2,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='MH(2,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #A78F6A;">
-        <div *ngIf="pos==='MH(2,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-    </div>
-  </div>
-  <div class="wrapper">
-    <div class="innerFlex">
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='LL(0,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='LL(0,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='LL(0,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='LL(1,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='LL(1,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='LL(1,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='LL(2,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='LL(2,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='LL(2,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-    </div>
-    <div class="innerFlex">
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='LM(0,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='LM(0,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='LM(0,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='LM(1,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='LM(1,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='LM(1,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='LM(2,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='LM(2,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #ECECEB;">
-        <div *ngIf="pos==='LM(2,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-    </div>
-    <div class="innerFlex">
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='LH(0,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='LH(0,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='LH(0,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='LH(1,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='LH(1,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='LH(1,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='LH(2,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='LH(2,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-      <div class="innerSquare" style="background-color: #DACBAD;">
-        <div *ngIf="pos==='LH(2,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
-      </div>
-    </div>
-  </div>
-</div> 
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+    });
+ </script>
 
 
 <div class="squareGraph">
-  <div class="wrapper">
-    <div class="smallFlex">
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='HL(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+    <div class="wrapper">
+      <div class="innerFlex">
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='HL(0,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='HL(0,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='HL(0,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='HL(1,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='HL(1,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='HL(1,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='HL(2,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='HL(2,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='HL(2,2'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
       </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='HL(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      <div class="innerFlex">
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='HM(0,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='HM(0,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='HM(0,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='HM(1,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='HM(1,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='HM(1,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='HM(2,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='HM(2,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='HM(2,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
       </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='HL(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='HL(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='HL(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='HL(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='HL(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='HL(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='HL(2,2'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      <div class="innerFlex">
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='HH(0,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='HH(0,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='HH(0,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='HH(1,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='HH(1,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='HH(1,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='HH(2,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='HH(2,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='HH(2,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
       </div>
     </div>
-    <div class="smallFlex">
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='HM(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+    <div class="wrapper">
+      <div class="innerFlex">
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='ML(0,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='ML(0,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='ML(0,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='ML(1,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='ML(1,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='ML(1,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='ML(2,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='ML(2,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='ML(2,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
       </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='HM(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      <div class="innerFlex">
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='MM(0,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='MM(0,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='MM(0,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='MM(1,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='MM(1,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='MM(1,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='MM(2,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='MM(2,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='MM(2,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
       </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='HM(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='HM(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='HM(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='HM(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='HM(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='HM(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='HM(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      <div class="innerFlex">
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='MH(0,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='MH(0,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='MH(0,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='MH(1,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='MH(1,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='MH(1,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='MH(2,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='MH(2,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #A78F6A;">
+          <div *ngIf="pos==='MH(2,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
       </div>
     </div>
-    <div class="smallFlex">
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='HH(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+    <div class="wrapper">
+      <div class="innerFlex">
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='LL(0,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='LL(0,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='LL(0,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='LL(1,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='LL(1,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='LL(1,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='LL(2,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='LL(2,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='LL(2,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
       </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='HH(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      <div class="innerFlex">
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='LM(0,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='LM(0,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='LM(0,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='LM(1,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='LM(1,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='LM(1,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='LM(2,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='LM(2,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #ECECEB;">
+          <div *ngIf="pos==='LM(2,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
       </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='HH(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      <div class="innerFlex">
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='LH(0,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='LH(0,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='LH(0,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='LH(1,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='LH(1,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='LH(1,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='LH(2,0)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='LH(2,1)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
+        <div class="innerSquare" style="background-color: #DACBAD;">
+          <div *ngIf="pos==='LH(2,2)'" id="circle" data-toggle="tooltip" title="{{pos}}"></div>
+        </div>
       </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='HH(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+    </div>
+  </div> 
+  
+  
+  <div class="squareGraph">
+    <div class="wrapper">
+      <div class="smallFlex">
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='HL(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='HL(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='HL(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='HL(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='HL(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='HL(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='HL(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='HL(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='HL(2,2'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
       </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='HH(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      <div class="smallFlex">
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='HM(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='HM(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='HM(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='HM(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='HM(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='HM(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='HM(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='HM(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='HM(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
       </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='HH(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      <div class="smallFlex">
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='HH(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='HH(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='HH(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='HH(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='HH(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='HH(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='HH(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='HH(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='HH(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
       </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='HH(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+    </div>
+    <div class="wrapper">
+      <div class="smallFlex">
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='ML(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='ML(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='ML(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='ML(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='ML(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='ML(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='ML(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='ML(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='ML(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
       </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='HH(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      <div class="smallFlex">
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='MM(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='MM(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='MM(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='MM(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='MM(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='MM(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='MM(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='MM(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='MM(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
       </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='HH(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+      <div class="smallFlex">
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='MH(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='MH(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='MH(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='MH(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='MH(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='MH(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='MH(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='MH(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #A78F6A;">
+          <span *ngIf="pos==='MH(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="smallFlex">
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='LL(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='LL(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='LL(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='LL(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='LL(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='LL(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='LL(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='LL(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='LL(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+      </div>
+      <div class="smallFlex">
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='LM(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='LM(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='LM(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='LM(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='LM(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='LM(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='LM(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='LM(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #ECECEB;">
+          <span *ngIf="pos==='LM(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+      </div>
+      <div class="smallFlex">
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='LH(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='LH(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='LH(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='LH(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='LH(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='LH(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='LH(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='LH(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
+        <div class="smallSquare" style="background-color: #DACBAD;">
+          <span *ngIf="pos==='LH(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
+        </div>
       </div>
     </div>
   </div>
-  <div class="wrapper">
-    <div class="smallFlex">
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='ML(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='ML(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='ML(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='ML(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='ML(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='ML(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='ML(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='ML(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='ML(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-    </div>
-    <div class="smallFlex">
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='MM(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='MM(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='MM(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='MM(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='MM(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='MM(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='MM(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='MM(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='MM(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-    </div>
-    <div class="smallFlex">
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='MH(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='MH(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='MH(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='MH(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='MH(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='MH(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='MH(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='MH(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #A78F6A;">
-        <span *ngIf="pos==='MH(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-    </div>
-  </div>
-  <div class="wrapper">
-    <div class="smallFlex">
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='LL(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='LL(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='LL(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='LL(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='LL(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='LL(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='LL(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='LL(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='LL(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-    </div>
-    <div class="smallFlex">
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='LM(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='LM(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='LM(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='LM(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='LM(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='LM(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='LM(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='LM(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #ECECEB;">
-        <span *ngIf="pos==='LM(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-    </div>
-    <div class="smallFlex">
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='LH(0,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='LH(0,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='LH(0,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='LH(1,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='LH(1,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='LH(1,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='LH(2,0)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='LH(2,1)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-      <div class="smallSquare" style="background-color: #DACBAD;">
-        <span *ngIf="pos==='LH(2,2)'" id="dot" data-toggle="tooltip" title="{{pos}}"></span>
-      </div>
-    </div>
-  </div>
-</div>
-
