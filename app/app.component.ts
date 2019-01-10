@@ -29,3 +29,14 @@ export class AppComponent {
      return this.http.post(url, req, this.commonHttpHeaders());
   }
 }
+
+  private commonHttpHeaders() {
+    const headers = new HttpHeaders().set(
+      'Content-Type',
+      'application/json; charset=utf-8'
+    );
+    return {
+      headers: headers // ,
+      // params: this.getQueryParams(null) // this will work with Angular 5
+    };
+  }
